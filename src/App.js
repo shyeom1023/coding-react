@@ -6,6 +6,7 @@ import About from './routes/About'
 import Posts from './routes/Posts'
 import Login from './routes/Login'
 import MyPage from './routes/MyPage'
+import Search from './routes/Search'
 
 import Header from './components/Header';
 
@@ -17,9 +18,10 @@ const App = () => {
               <Header/>
               <Route exact path="/" component={Home}/>
               <Route path="/about/:username" component={About}/>
-              <Route exact path="/posts" component={Posts}/>
-              <Route exact path="/login" component={Login}/>
-              <Route exact path="/me" component={MyPage}/>
+              <Route path="/posts" component={Posts}/>
+              <Route path="/login" component={Login}/>
+              <Route path="/me" component={MyPage}/>
+              <Route path="/search" component={Search}/>
           </div>
       </Router>
   );

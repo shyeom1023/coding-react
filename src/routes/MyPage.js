@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { Redirect } from 'react-router-dom';
 
-const logged = true;
+const logged = false;
 
 const MyPage = () => {
         return(

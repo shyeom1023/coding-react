@@ -6,7 +6,7 @@ const Post = ({match}) => {
     return (
         <div>
             <h2>
-                {match.params.title}
+                {match.params.title}입니다.
             </h2>
         </div>
     );
@@ -20,7 +20,7 @@ const Posts = () => {
                 <Link to="/posts/react">React</Link>
                 <Link to="/posts/redux">Redux</Link>
                 <Link to="/posts/relay">Relay</Link>
-                <Route path = "/posts/:title" component={Post}/>
+                <Route path="/posts/:title" component={Post}/>
             </div>
     );
 };
